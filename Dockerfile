@@ -7,5 +7,5 @@ ARG JAR_FILE=target/EmployeeCrud-0.0.1-SNAPSHOT.jar
 # Jar File Ah Copy Pannuren Docker Image Kulla!!
 COPY ${JAR_FILE} app.jar
 
-# Java Command Run Pannuren!!
-ENTRYPOINT ["java","-jar","/app.jar"]
+# Ithu Important Line (ENTRYPOINT Fix)
+CMD ["java","-jar","/app.jar"]
