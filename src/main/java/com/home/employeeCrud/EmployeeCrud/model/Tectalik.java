@@ -15,14 +15,17 @@ public class Tectalik {
     private String department_name;
     private String designation_name;
 
+    private String employee_id;
+
 
     public Tectalik(){}
 
-    public Tectalik(int emp_id, String emp_name, String department_name, String designation_name) {
+    public Tectalik(int emp_id, String emp_name, String department_name, String designation_name, String employee_id) {
         this.emp_id = emp_id;
         this.emp_name = emp_name;
         this.department_name = department_name;
         this.designation_name = designation_name;
+        this.employee_id= employee_id;
     }
     public int getEmp_id() {
         return emp_id;
@@ -47,6 +50,14 @@ public class Tectalik {
     }
     public void setDesignation_name(String designation_name) {
         this.designation_name = designation_name;
+    }
+
+    public String getEmployee_id() {
+        return employee_id;
+    }
+
+    public void setEmployee_id(String employee_id) {
+        this.employee_id = employee_id;
     }
     
     

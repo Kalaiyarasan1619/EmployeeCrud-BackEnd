@@ -57,6 +57,7 @@ public class TectalikController {
         t.setEmp_name(tec.getEmp_name());
         t.setDepartment_name(tec.getDepartment_name());
         t.setDesignation_name(tec.getDesignation_name());
+        t.setEmployee_id(tec.getEmployee_id());
 
         Tectalik tectalik=repo.save(t);
 
